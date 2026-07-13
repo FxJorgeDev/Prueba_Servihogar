@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SERVIHogar — Profesionales de confianza para tu hogar</title>
+<meta name="description" content="Encuentra y agenda profesionales verificados de limpieza, plomería, electricidad y más, cerca de ti.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">
+      <span class="nav__mark">SH</span> SERVIHogar
+    </a>
+    <nav class="nav__links">
+      <a href="#servicios">Servicios</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#opiniones">Opiniones</a>
+    </nav>
+    <a href="#cta" class="btn btn--ghost">Soy profesional</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow">Servicios para el hogar, verificados</p>
+      <h1>Tu casa tiene arreglo. <br>Encuentra a quién lo haga <em>hoy</em>.</h1>
+      <p class="hero__sub">
+        SERVIHogar conecta a familias con técnicos y especialistas evaluados
+        en limpieza, plomería, electricidad, jardinería y más — con precio
+        claro antes de agendar.
+      </p>
+      <form class="hero__search" onsubmit="return false;">
+        <div class="hero__field">
+          <label for="servicio">Servicio</label>
+          <input id="servicio" type="text" placeholder="Ej. Plomería" list="servicios-list">
+          <datalist id="servicios-list">
+            <option value="Limpieza del hogar">
+            <option value="Plomería">
+            <option value="Electricidad">
+            <option value="Jardinería">
+            <option value="Pintura">
+            <option value="Mudanza">
+          </datalist>
+        </div>
+        <div class="hero__field">
+          <label for="zona">Distrito</label>
+          <input id="zona" type="text" placeholder="Ej. Miraflores">
+        </div>
+        <button type="submit" class="btn btn--primary">Buscar profesional</button>
+      </form>
+      <p class="hero__trust">+1,200 profesionales verificados en Lima</p>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="ticket">
+        <div class="ticket__row ticket__row--top">
+          <span class="ticket__label">Orden de servicio</span>
+          <span class="ticket__id">#SH-0842</span>
+        </div>
+        <div class="ticket__divider"></div>
+        <div class="ticket__body">
+          <p class="ticket__service">Plomería — fuga en cocina</p>
+          <p class="ticket__meta">Hoy · 4:00 pm · San Borja</p>
+          <div class="ticket__pro">
+            <span class="ticket__avatar">RC</span>
+            <div>
+              <p class="ticket__name">Rosa Castillo</p>
+              <p class="ticket__rating">★★★★★ 4.9 (188 servicios)</p>
+            </div>
+          </div>
+        </div>
+        <div class="ticket__divider ticket__divider--dashed"></div>
+        <div class="ticket__row ticket__row--bottom">
+          <span>Estado</span>
+          <span class="ticket__status">Confirmado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="services" id="servicios">
+    <h2>¿Qué necesitas resolver?</h2>
+    <div class="services__grid">
+
+      <article class="service-card">
+        <div class="service-card__icon" style="--c:#2B6E58">
+          <svg viewBox="0 0 24 24"><path d="M4 20L14 10M14 10L11 7L16 2L19 5L14 10Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Limpieza del hogar</h3>
+        <p>Limpieza profunda, mantenimiento semanal y post-mudanza.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon" style="--c:#3E6EA6">
+          <svg viewBox="0 0 24 24"><path d="M12 2C9 6 6 9 6 13a6 6 0 0012 0c0-4-3-7-6-11z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Plomería</h3>
+        <p>Fugas, instalación de grifería, atoros y calentadores de agua.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon" style="--c:#C48A2E">
+          <svg viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 10-13h-6l1-7z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Electricidad</h3>
+        <p>Instalaciones, cortocircuitos, tableros y cambio de luminarias.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon" style="--c:#4E8B5C">
+          <svg viewBox="0 0 24 24"><path d="M12 3v6M12 21v-6M4 12h16M7 7l3 3M17 17l-3-3M17 7l-3 3M7 17l3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Jardinería</h3>
+        <p>Poda, diseño de áreas verdes y mantenimiento de jardines.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon" style="--c:#B5502E">
+          <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M4 9h16" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h3>Pintura</h3>
+        <p>Interiores, exteriores y acabados decorativos.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon" style="--c:#6B5B95">
+          <svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="10" rx="1" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M16 10h3l2 3v4h-5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/><circle cx="7.5" cy="17.5" r="1.5" fill="currentColor"/><circle cx="17.5" cy="17.5" r="1.5" fill="currentColor"/></svg>
+        </div>
+        <h3>Mudanza</h3>
+        <p>Traslado de muebles, embalaje y transporte seguro.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="steps" id="como-funciona">
+    <h2>Agendar toma tres pasos</h2>
+    <div class="steps__list">
+      <div class="step">
+        <span class="step__num">01</span>
+        <h3>Describe el trabajo</h3>
+        <p>Cuéntanos qué necesitas y en qué distrito. Sin registros largos.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">02</span>
+        <h3>Compara profesionales</h3>
+        <p>Verás calificación, precio estimado y disponibilidad real.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">03</span>
+        <h3>Agenda y listo</h3>
+        <p>Confirmas la visita y pagas solo cuando el trabajo esté hecho.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIONES -->
+  <section class="reviews" id="opiniones">
+    <h2>Familias que ya resolvieron</h2>
+    <div class="reviews__grid">
+      <blockquote class="review">
+        <p>“El electricista llegó puntual y me explicó todo antes de cobrar. Volvería a usar SERVIHogar sin dudarlo.”</p>
+        <cite>— Marisol T., San Miguel</cite>
+      </blockquote>
+      <blockquote class="review">
+        <p>“Agendé una limpieza profunda un domingo por la noche y llegaron el lunes a primera hora.”</p>
+        <cite>— Jorge P., Surco</cite>
+      </blockquote>
+      <blockquote class="review">
+        <p>“Me gustó ver la calificación real de la plomera antes de contratarla. Se siente más seguro.”</p>
+        <cite>— Andrea L., Miraflores</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final-cta" id="cta">
+    <div class="final-cta__inner">
+      <h2>¿Eres técnico o profesional del hogar?</h2>
+      <p>Únete a SERVIHogar y recibe pedidos verificados en tu zona, sin pagar por publicidad.</p>
+      <a href="#" class="btn btn--accent">Registrarme como profesional</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <p class="nav__logo footer__logo"><span class="nav__mark">SH</span> SERVIHogar</p>
+      <p class="footer__tag">Servicios para el hogar, sin sorpresas.</p>
+    </div>
+    <div class="footer__cols">
+      <div>
+        <h4>Servicios</h4>
+        <a href="#servicios">Limpieza</a>
+        <a href="#servicios">Plomería</a>
+        <a href="#servicios">Electricidad</a>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#cta">Trabaja con nosotros</a>
+      </div>
+    </div>
+  </div>
+  <p class="footer__legal">© 2026 SERVIHogar. Proyecto académico — UPC.</p>
+</footer>
+
+</body>
+</html>
